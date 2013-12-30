@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataSearch", "BigDataSearch\BigDataSearch.csproj", "{5AEFD3C4-9230-425D-887B-CD6A138141C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigDataSearchTests", "BigDataSearchTests\BigDataSearchTests.csproj", "{4F3641F3-9EBE-4B14-8E73-23902A07E881}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5AEFD3C4-9230-425D-887B-CD6A138141C7} = {5AEFD3C4-9230-425D-887B-CD6A138141C7}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5AEFD3C4-9230-425D-887B-CD6A138141C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AEFD3C4-9230-425D-887B-CD6A138141C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AEFD3C4-9230-425D-887B-CD6A138141C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AEFD3C4-9230-425D-887B-CD6A138141C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F3641F3-9EBE-4B14-8E73-23902A07E881}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F3641F3-9EBE-4B14-8E73-23902A07E881}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F3641F3-9EBE-4B14-8E73-23902A07E881}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F3641F3-9EBE-4B14-8E73-23902A07E881}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
