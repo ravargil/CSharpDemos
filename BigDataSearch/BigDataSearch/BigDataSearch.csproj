@@ -42,8 +42,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BigDataSearcher.cs" />
+    <Compile Include="FileBuffer.cs" />
+    <Compile Include="IBigDataIndexer.cs" />
+    <Compile Include="IBigDataSearcher.cs" />
+    <Compile Include="IFileBufferReader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

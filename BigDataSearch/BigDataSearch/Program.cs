@@ -55,7 +55,7 @@ namespace BigDataSearch
         {
             System.Console.WriteLine("Please enter zip code");
             string zipCode = System.Console.ReadLine();
-            BigDataSearcher.QueryResult result = bigDataSearchHelper.SearchByZipCode(zipCode);
+            QueryResult result = bigDataSearchHelper.SearchByZipCode(zipCode);
             System.Console.WriteLine("Result=\n{0}", result.Result);
             System.Console.WriteLine("Total query time: {0}", result.ExecTime);
             System.Console.WriteLine("Total number of records: {0}", result.NumberOfRecord);
@@ -66,7 +66,7 @@ namespace BigDataSearch
         {
             System.Console.WriteLine("Please enter email");
             string email = System.Console.ReadLine();
-            BigDataSearcher.QueryResult result = bigDataSearchHelper.SearchByEmail(email);
+            QueryResult result = bigDataSearchHelper.SearchByEmail(email);
             System.Console.WriteLine("Result=\n{0}", result.Result);
             System.Console.WriteLine("Total query time: {0}", result.ExecTime);
             System.Console.WriteLine("Total number of records: {0}", result.NumberOfRecord);

@@ -42,7 +42,7 @@ namespace BigDataSearchTests
             string zipCode = null;
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
+            QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -59,7 +59,7 @@ namespace BigDataSearchTests
             string zipCode = "";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
+            QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -75,7 +75,7 @@ namespace BigDataSearchTests
             string zipCode = "123456";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
+            QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -92,7 +92,7 @@ namespace BigDataSearchTests
             string expectedRecord = "\"Alisha\",\"Slusarski\",\"Wtlz Power 107 Fm\",\"3273 State St\",\"Middlesex\",\"Middlesex\",\"NJ\",\"08846\",\"732-658-3154\",\"732-635-3453\",\"alisha@slusarski.com\",\"http://www.wtlzpowerfm.com\"\n";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
+            QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -110,7 +110,7 @@ namespace BigDataSearchTests
             string secondRecord = "\"Elke\",\"Sengbusch\",\"Riley Riper Hollin & Colagreco\",\"9 W Central Ave\",\"Phoenix\",\"Maricopa\",\"AZ\",85013,\"602-896-2993\",\"602-575-3457\",\"elke_sengbusch@yahoo.com\",\"http://www.rileyriperhollincolagreco.com\"";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
+            QueryResult result = bigDataSearcher.SearchByZipCode(zipCode);
             string[] tokens = result.Result.Split('\n');
             string firstActual = tokens[0];
             string secondActual = tokens[1];
@@ -132,7 +132,7 @@ namespace BigDataSearchTests
             string email = "";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByEmail(email);
+            QueryResult result = bigDataSearcher.SearchByEmail(email);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -148,7 +148,7 @@ namespace BigDataSearchTests
             string email = null;
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByEmail(email);
+            QueryResult result = bigDataSearcher.SearchByEmail(email);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -165,7 +165,7 @@ namespace BigDataSearchTests
             string email = "abcdefghijk@lmnopqrst.uvwxyz";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByEmail(email);
+            QueryResult result = bigDataSearcher.SearchByEmail(email);
 
             //Assert:
             Assert.IsNotNull(result);
@@ -183,7 +183,7 @@ namespace BigDataSearchTests
             string expectedRecord = "\"Alisha\",\"Slusarski\",\"Wtlz Power 107 Fm\",\"3273 State St\",\"Middlesex\",\"Middlesex\",\"NJ\",\"08846\",\"732-658-3154\",\"732-635-3453\",\"alisha@slusarski.com\",\"http://www.wtlzpowerfm.com\"";
 
             //Act:
-            BigDataSearcher.QueryResult result = bigDataSearcher.SearchByEmail(email);
+            QueryResult result = bigDataSearcher.SearchByEmail(email);
 
             //Assert:
             Assert.IsNotNull(result);

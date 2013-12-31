@@ -9,15 +9,8 @@ using System.Threading.Tasks;
 
 namespace BigDataSearch
 {
-    public class BigDataSearcher : IDisposable
+    public class BigDataSearcher : IBigDataSearcher, IDisposable
     {
-        public class QueryResult
-        {
-            public string Result { get; set; }
-            public long NumberOfRecord { get; set; }
-            public TimeSpan ExecTime { get; set; }
-        }
-
         private string FirstPhaseZipCodeIndexFileName;
         private string FirstPhaseEmailIndexFileName;
         private string SortedFirstPhaseZipCodeIndexFileName;
